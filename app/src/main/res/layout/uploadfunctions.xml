@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f8e9"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/imageSelect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/inout"
+            android:gravity="center"
+            android:hint="Hall name" />
+
+        <EditText
+            android:id="@+id/contacttext"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/inout"
+            android:gravity="center"
+            android:hint="Hall Address" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/contacttext"
+            android:layout_alignStart="@+id/contacttext"
+            android:layout_below="@+id/contacttext"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/inout"
+            android:gravity="center"
+            android:hint="contact" />
+
+
+        <EditText
+            android:id="@+id/hallcontact"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/phone_number"
+            android:layout_alignStart="@+id/phone_number"
+            android:layout_below="@+id/phone_number"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/inout"
+            android:gravity="center"
+            android:hint="Type" />
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:adjustViewBounds="true"
+            android:background="#fff"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/abc_vector_test" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hallcontact"
+            android:layout_alignStart="@+id/hallcontact"
+            android:layout_below="@+id/hallcontact"
+            android:layout_marginTop="65dp"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/DisplayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/submit"
+            android:layout_alignBottom="@+id/submit"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Show functions" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
